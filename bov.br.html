@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>gov.br</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="bov.br">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#ffffff">
+
+    <link
+        rel="apple-touch-icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAF6UlEQVR42u2dvW4UPRRAJ6upVtAgRWlo6Ni2W1Cl4Dl4CGhJkSIFtHkdKgqqFKnDK6BINJFWlBSRooXZmfXPvfa99jlVvhDNjK+Prz0e29/Ji/OPA8AhVoQAkAOQA5ADkAOQA5ADkAOQA5ADkAMAOQA5ADkAOQA5ADkAOQA5ADkAOQCQA5ADkAOQA5ADkAOQA5ADWmMsc5tfP77M/dPZxSXVYDNuJ6pHMCyUDUvsx01LjqjioYjNuMnLkVy8zhUxGDdhOURKWMyPx7ubkD97uf3kwgzxuEnKIVhCJT8CbSjsitm4ickhXkKpcooIoSeK2biJyaFUwsxyqmohoojNuEnKoVrChHIWcyLTEmtxk5ejQAnDy1lRi1hFTMVtjrF87NY/X01/uXv72/LYIvZJ8sciSlEqlzli9T9Y4PDCzzUCO1oEppDluGVGSTB5jHUTxvRvokpuVov9x4vKIhpRqpA5wtNGSIEDG8d+IzBuxlwKmYubYJSkksc4+OTx7maz2Ux/f39/b/NpC0yziqMuR0KDWM6cr3ffhmE4aMb+761ZstzFiEepZrcS2KeklXkubW6329grGEwku91ONUqCPYublWAJZiwkmIqs12svMVeUI7NB7F8hzQwXfghGyZMcdXMG+aN9OfLNwI825dh8eCN5NfxoRg5ZM8z6MZz/QQ7wB3KQPKTlCJlRyZm80+hT7PYseX6ExDnt28qKlkSp68hReHFKh6hGOF2OwEwV/fR9po2ksut9VTHZrfRshr0IZMkRnjzoX8R7E+20UTRzHC8MaSMsDsVaWq4cUWIu+f5vRPTWYdhcKhboR2wOzty3IrAS7OziMmoZ+sHirUkY0ukhf8ebTLeS+RyO1r8UIzMmIntlxcYc4jviNfK/jz7FTF2sDD6TUl1iRuW3lYQnW86fUjXq0YyEnsX0yT7PRGx5CghB5tcyvzljulS9WNoeqp8mGN44kv3w3psc9cPfaYKBlkRlzgQ/GhhnzMnh/hzSoyTsdw1UpJnhZ8V9lDXlyNwJ7WivrFM/Rr8h6+TVtCKsIQV7cjg6XaM6tWJF5gDkAOQA93Iw4HARsbG9OJ6enj798PDw0OodkSO9kvb/U7XCyt+RMYdAPR39vcc7Igd0LIfG2Gq5sWo05fJ3LD8mJXMAcgByAHIAcgSzPLWgMfFQ/o7IAchRMHnoNeLydyxMU9PnT7VS8ktH+Tsih+JooI070q0AcgByAHIAcgByQM+MXZf++23Qn71/12d46mykrrb6PNAGk66U307dR+YQcWJ6tdYzyogWuRdvV5ERLVCkJzmKadG6ItVO9lEZk1bRosiItcrhPg3Ncxgxw9STIIfF+mjCjxVm4Ic5OcQ6Uct1IPRstU4TdJ457LdOz/mDD29gUo7cbOmlUeY9Z8UTjN1OggVH/PPV1dMPX6+vpW4efc3vtx7nxxrvVp5r8b+frV0TOUrnzGnN5delxjVt9iluM4fHVwCHz1xfDqXGMdegcxq6xjXNpg1eZQE5wK8c1fOnQSzEhMwB5uUQbyhz01M5U2Ea17ScSg1ljoiIeFyNF/zMdjrZlruVaYPOb+Ia16Rbqd+5SNWixjVtjs0r/39lDxK69tjRnGNYn2Ltrc1zt+Jl5OF2v4JFOfqc9jBY6pXvSNlvlD47FOvdSgt+eDajlVdZm3743xppWg7H02IOp7z8ZQ6XfjRhxmBznmNK3K7rivMfMYLafynzIceQsCu/sCKRecvF67obOYa0UxsKKBLfnXmZyPEkx5B8qoeSIkmjHEdTfM7kGDJPfal9mqCvyV9/cggoEuuKxHuQx28CXuUYKh5m2ocZg+sZUi8R9/sd0XHmsJ9CvH9ebkEOg4q0seqgnTWkduqjmfUo7WQOCymksWVKDcpR3pJWl661LEcBRdpe0di+HOKi9LPEtS850lzpdp9313JAL6+ygByAHIAcgByAHIAcgByAHADIAcgByAHIAcgByAHIAcgByAHIAcgByAHIAYAcgByAHIAcgByAHIAcgByAHNAbfwGV0Ut28hb77wAAAABJRU5ErkJggg=="
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            color-scheme: light;
+            --navy: #0c326f;
+            --blue: #1351b4;
+            --yellow: #ffcd07;
+            --green: #168821;
+            --bg: #f6f6f6;
+            --gray: #636363;
+            --line: #dcdcdc;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: #e9e9e9;
+            font-family: 'Montserrat', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .app {
+            width: 100%;
+            max-width: 480px;
+            height: 100%;
+            background: var(--bg);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            height: 64px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: -1px;
+            display: flex;
+            align-items: baseline;
+        }
+
+        .logo .b {
+            font-size: 15px;
+            color: #4c3fd6;
+            margin-right: 1px;
+        }
+
+        .logo .o {
+            color: #f5b800;
+        }
+
+        .logo .v {
+            color: #1e9e3a;
+        }
+
+        .logo .d {
+            color: #2d7dd2;
+        }
+
+        .logo .r {
+            color: #f5b800;
+        }
+
+        .hr {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .bell {
+            width: 30px;
+            height: 30px;
+            fill: #8a8a8a;
+            background: none;
+            border: 0;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid #cfcfcf;
+            background: #5b6b82;
+            overflow: hidden;
+        }
+
+        main {
+            flex: 1;
+            overflow-y: auto;
+            padding-bottom: 16px;
+        }
+
+        .banner {
+            min-height: 118px;
+            background: linear-gradient(
+                100deg,
+                #021b6b 0%,
+                #0a3ea8 55%,
+                #1a74e0 100%
+            );
+            color: #fff;
+            padding: 16px 14px 22px;
+            position: relative;
+            margin-top: 4px;
+        }
+
+        .banner h2 {
+            font-size: 21px;
+            font-weight: 500;
+        }
+
+        .banner h2 b {
+            font-weight: 700;
+        }
+
+        .banner p {
+            font-size: 15px;
+            letter-spacing: 1.4px;
+            font-weight: 500;
+            margin-top: 14px;
+        }
+
+        .banner p b {
+            font-weight: 700;
+        }
+
+        .bars {
+            display: flex;
+            gap: 6px;
+            margin-top: 14px;
+            width: 92%;
+        }
+
+        .bars i {
+            flex: 1;
+            height: 7px;
+            background: var(--yellow);
+            transform: skewX(-20deg);
+        }
+
+        .nivel {
+            margin: 18px 0 0 auto;
+            background: #fff;
+            color: var(--blue);
+            border: 0;
+            border-radius: 30px;
+            padding: 9px 18px;
+            font: 700 13px 'Montserrat', Arial, sans-serif;
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 0 0 6px rgba(255, 255, 255, .2);
+        }
+
+        .search {
+            margin: 26px 12px 0;
+            background: #fff;
+            border: 1.5px solid #a9a9a9;
+            border-radius: 10px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        }
+
+        .search input {
+            flex: 1;
+            border: 0;
+            outline: 0;
+            background: none;
+            font: italic 400 17px 'Montserrat', Arial, sans-serif;
+            color: #222;
+            min-width: 0;
+        }
+
+        .search input::placeholder {
+            color: #333;
+        }
+
+        .card {
+            margin: 22px 8px 0;
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+            padding: 16px 14px 6px;
+        }
+
+        .card h3 {
+            font-size: 19px;
+            color: var(--gray);
+            font-weight: 600;
+            padding: 0 6px 14px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border-top: 1px solid var(--line);
+            padding: 0 2px;
+            height: 58px;
+            cursor: pointer;
+            width: 100%;
+            background: none;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            text-align: left;
+            font-family: inherit;
+        }
+
+        .item:active {
+            background: #f0f4fb;
+        }
+
+        .item svg.ic {
+            width: 24px;
+            height: 24px;
+            fill: var(--navy);
+            flex: none;
+        }
+
+        .item span.t {
+            flex: 1;
+            font-size: 18.5px;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .item .ch {
+            width: 22px;
+            height: 22px;
+            stroke: var(--blue);
+            fill: none;
+            stroke-width: 2.4;
+            flex: none;
+        }
+
+        .novo {
+            background: var(--green);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: 20px;
+            padding: 5px 11px;
+        }
+
+        .bx {
+            color: #4c3fd6;
+            font-weight: 800;
+        }
+
+        nav {
+            display: flex;
+            background: #fff;
+            border-top: 1px solid #eee;
+            height: 74px;
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+            align-items: flex-start;
+            justify-content: space-around;
+            position: relative;
+        }
+
+        nav button {
+            background: none;
+            border: 0;
+            font: 400 14px 'Montserrat', Arial, sans-serif;
+            color: #9a9a9a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            padding-top: 12px;
+            flex: 1;
+        }
+
+        nav button svg {
+            width: 30px;
+            height: 30px;
+            fill: #a5a5a5;
+        }
+
+        nav button.on {
+            color: var(--blue);
+        }
+
+        nav button.on svg {
+            fill: var(--blue);
+        }
+
+        nav .qr {
+            padding-top: 6px;
+            margin-top: 0;
+        }
+
+        nav .qr .c {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -1px;
+        }
+
+        nav .qr .c svg {
+            fill: #fff;
+            width: 21px;
+            height: 21px;
+        }
+
+        .toast {
+            position: absolute;
+            left: 50%;
+            bottom: 92px;
+            transform: translateX(-50%);
+            background: #222;
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity .25s;
+            pointer-events: none;
+            max-width: 88%;
+            text-align: center;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
+        .modal {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .55);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            z-index: 5;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal div {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .modal h4 {
+            color: var(--navy);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .modal p {
+            color: #444;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .modal button {
+            margin-top: 18px;
+            background: var(--blue);
+            color: #fff;
+            border: 0;
+            border-radius: 30px;
+            padding: 11px 28px;
+            font: 600 15px 'Montserrat', Arial, sans-serif;
+        }
+
+        .view {
+            display: block;
+            padding: 40px 24px;
+            text-align: center;
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .app.w .bell {
+            display: none;
+        }
+
+        #wallet {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stage {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stage > main {
+            position: absolute;
+            inset: 0;
+            background: var(--bg);
+            transform: translateX(100%);
+            transition: transform .38s cubic-bezier(.32, .72, 0, 1);
+            box-shadow: -8px 0 16px rgba(0, 0, 0, .12);
+            will-change: transform;
+            z-index: 1;
+        }
+
+        .stage > main.left {
+            transform: translateX(-30%);
+        }
+
+        .stage > main.cur {
+            transform: none;
+        }
+
+        .stage > main.nt {
+            transition: none;
+        }
+
+        #wallet {
+            background: #fff;
+        }
+
+        #wallet .bar {
+            background: var(--navy);
+            color: #fff;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-size: 19px;
+            flex: none;
+        }
+
+        #wallet .bar button {
+            position: absolute;
+            left: 10px;
+            background: none;
+            border: 0;
+            display: flex;
+            padding: 6px;
+        }
+
+        .wc {
+            margin: 16px 14px 0;
+            height: 156px;
+            border-radius: 14px;
+            background: #a0e4f0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .3);
+            padding: 16px 0 0 52px;
+            font-weight: 600;
+            font-size: 18px;
+            color: #111;
+            cursor: pointer;
+        }
+
+        .wc .tag {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--yellow);
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+
+        .wc .tag b {
+            position: absolute;
+            left: 6px;
+            top: 3px;
+            font-size: 11px;
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        .wc svg.em {
+            position: absolute;
+            right: -8px;
+            bottom: -10px;
+            width: 190px;
+            height: 170px;
+            opacity: .3;
+        }
+
+        .addb {
+            margin: auto 14px 16px;
+            background: var(--blue);
+            color: #fff;
+            border: 0;
+            border-radius: 30px;
+            height: 44px;
+            font: 500 17px 'Montserrat', Arial, sans-serif;
+            flex: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <div class="logo">
+                <span class="d">g</span>
+                <span class="o">o</span>
+                <span class="v">v</span>
+                <span class="d">.b</span>
+                <span class="r">r</span>
+            </div>
+
+            <div class="hr">
+                <button
+                    class="bell"
+                    aria-label="Notificações"
+                    onclick="toast('Nenhuma notificação nova')"
+                >
+                    <svg viewBox="0 0 24 24" width="30" height="30">
+                        <path d="M12 22a2.2 2.2 0 0 0 2.2-2.2h-4.4A2.2 2.2 0 0 0 12 22zm6.5-6.2V11c0-3.2-1.7-5.9-4.7-6.6V3.7a1.8 1.8 0 0 0-3.6 0v.7C7.2 5.1 5.5 7.800 5.500 11v4.800L3.500 17.800V19h17v-1.200z"/>
+                    </svg>
+                </button>
+
+                <div class="avatar">
+                    <svg viewBox="0 0 50 50" width="50" height="50">
+                        <circle cx="25" cy="19" r="9" fill="#d9b89a"/>
+                        <path d="M16 17c0-8 18-8 18 0-3-4-15-4-18 0z" fill="#1d1d1d"/>
+                        <path d="M4 50c2-14 12-18 21-18s19 4 21 18z" fill="#222"/>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <div class="stage">
+
+            <main id="home" class="cur">
+
+                <section class="banner">
+                    <h2>Olá, <b>MIGUEL</b></h2>
+
+                    <p>SUA CONTA É NÍVEL <b>OURO</b></p>
+
+                    <div class="bars">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <button
+                        class="nivel"
+                        onclick="document.getElementById('m').classList.add('show')"
+                    >
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="#1351b4">
+                            <path d="M12 5C6.500 5 2.700 9 1 12c1.700 3 5.500 7 11 7s9.300-4 11-7c-1.700-3-5.500-7-11-7zm0 11.500A4.500 4.500 0 1 1 12 7.500a4.500 4.500 0 0 1 0 9zm0-7a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5z"/>
+                        </svg>
+                        VER NÍVEL
+                    </button>
+                </section>
+
+                <label class="search">
+                    <input
+                        id="q"
+                        type="search"
+                        placeholder="Encontre serviços públicos no gov.br"
+                        oninput="filtra()"
+                    >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="30"
+                        height="30"
+                        fill="none"
+                        stroke="#0c326f"
+                        stroke-width="2.800"
+                        stroke-linecap="round"
+                    >
+                        <circle cx="10" cy="10" r="6.500"/>
+                        <path d="M15 15l6 6"/>
+                    </svg>
+                </label>
+
+                <section class="card">
+                    <h3>Serviços</h3>
+                    <div id="lista"></div>
+                </section>
+
+                <section class="card">
+                    <h3>Minha conta</h3>
+                    <div id="lista2"></div>
+                </section>
+
+            </main>
+
+            <main id="wallet">
+
+                <div class="bar">
+                    <button aria-label="Voltar" onclick="go('Início')">
+                        <svg
+                            viewBox="0 0 24 24"
+                            width="28"
+                            height="28"
+                            fill="none"
+                            stroke="#fff"
+                            stroke-width="2.600"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M15 4 7 12l8 8"/>
+                        </svg>
+                    </button>
+
+                    Carteira de documentos
+                </div>
+
+                <div class="wc" onclick="toast('Carteira de Identidade')">
+                    <div class="tag">
+                        <b>ID</b>
+                    </div>
+
+                    Carteira de Identidade
+
+                    <svg class="em" viewBox="0 0 120 110" fill="#0c326f">
+                        <path d="M22 30C8 28 4 14 6 6c8 4 18 8 26 20zM98 30c14-2 18-16 16-24-8 4-18 8-26 20z"/>
+                        <ellipse cx="14" cy="46" rx="14" ry="8" transform="rotate(-20 14 46)"/>
+                        <ellipse cx="106" cy="46" rx="14" ry="8" transform="rotate(20 106 46)"/>
+                        <path d="M30 28c10-8 50-8 60 0 6 16 4 40-4 50H34c-8-10-10-34-4-50z"/>
+                        <ellipse cx="60" cy="84" rx="28" ry="22" fill="#fff"/>
+                        <ellipse cx="49" cy="84" rx="4" ry="7"/>
+                        <ellipse cx="71" cy="84" rx="4" ry="7"/>
+                        <circle cx="46" cy="50" r="5" fill="#fff"/>
+                        <circle cx="74" cy="50" r="5" fill="#fff"/>
+                    </svg>
+                </div>
+
+                <button
+                    class="addb"
+                    onclick="toast('Adicionar documento: em breve')"
+                >
+                    Adicionar documento
+                </button>
+
+            </main>
+
+        </div>
+
+        <nav id="nav">
+
+            <button class="on" data-v="Início">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3 2 12h3v8h5v-6h4v6h5v-8h3z"/>
+                </svg>
+                Início
+            </button>
+
+            <button data-v="Dados">
+                <svg viewBox="0 0 24 24">
+                    <path d="M17 3h-2.200a3 3 0 0 0-5.600 0H7a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-3 7h6v2H9zm0 4h6v2H9zm0 4h4v2H9z"/>
+                </svg>
+                Dados
+            </button>
+
+            <button class="qr" data-v="QR Code">
+                <span class="c">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm8-2h3v3h-3zm4 0h3v3h-3zm-4 4h3v3h-3zm4 1h3v2h-3z"/>
+                    </svg>
+                </span>
+                QR Code
+            </button>
+
+            <button data-v="Carteira">
+                <svg viewBox="0 0 24 24">
+                    <path d="M21 7H5a1 1 0 0 1 0-2h14V3H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm-3 8.500a1.500 1.500 0 1 1 0-3 1.500 1.500 0 0 1 0 3z"/>
+                </svg>
+                Carteira
+            </button>
+
+            <button data-v="Menu">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 6h18v2.500H3zm0 5h18v2.500H3zm0 5h18v2.500H3z"/>
+                </svg>
+                Menu
+            </button>
+
+        </nav>
+
+        <div class="toast" id="toast"></div>
+
+        <div class="modal" id="m">
+            <div>
+                <h4>Conta nível Ouro</h4>
+
+                <p>
+                    Parabéns, Miguel! Sua conta gov.br está no nível mais alto
+                    de confiabilidade do rebanho.
+                </p>
+
+                <button onclick="document.getElementById('m').classList.remove('show')">
+                    Fechar
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var S = [
+            {
+                t: 'Gerar código de acesso',
+                i: '<path d="M12 2 4 5v6c0 5 3.400 9.700 8 11 4.600-1.300 8-6 8-11V5zm0 2.200 6 2.300V11c0 4-2.600 7.700-6 8.900C8.600 18.700 6 15 6 11V6.500zm-1.200 10.300-2.800-2.800 1.400-1.400 1.400 1.400 3.600-3.600 1.400 1.400z"/>'
+            },
+            {
+                t: 'Procuração eletrônica',
+                novo: 1,
+                i: '<path d="M5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm14 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM12 6a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5zM2 9.500V13h3v-3.500zm17 0V13h3V9.500zM8.500 13v4h7v-4zM9 19v2h6v-2z"/>'
+            },
+            {
+                t: 'Caixa Postal',
+                i: '<path d="M2 5h20v2l-10 6L2 7zm0 4.500 10 6 10-6V19H2z"/>'
+            },
+            {
+                t: 'Carteira de documentos',
+                i: '<path d="M20 6H5a1 1 0 0 1 0-2h14V2H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h15a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-2 9.500a1.500 1.500 0 1 1 0-3 1.500 1.500 0 0 1 0 3z"/>'
+            },
+            {
+                t: 'Assinar documentos digitalmente',
+                i: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h6l2-2H6V4h7v5h5v3l2-2V8zm6.500 10.500-1.900-1.900-6 6V18.500h1.900z"/>'
+            },
+            {
+                t: '<span class="bx">B</span>ovinho (crianças até 6 anos)',
+                n: 'govinho (criancas ate 6 anos)',
+                i: '<circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="12" cy="3.500" r="2"/><path d="M9 8h6l1 7h-2v7h-4v-7H8zM3 9l3 1v3H3zm18 0-3 1v3h3z"/>'
+            },
+            {
+                t: 'Agenda',
+                i: '<path d="M7 2v2H5a2 2 0 0 0-2 2v2h18V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM3 10v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V10z"/>'
+            },
+            {
+                t: 'Consultar serviços solicitados',
+                i: '<path d="M9.500 3a6.500 6.500 0 1 0 4 11.600l5.200 5.200 1.600-1.600-5.200-5.200A6.500 6.500 0 0 0 9.500 3zm0 2.200a4.300 4.300 0 1 1 0 8.600 4.300 4.300 0 0 1 0-8.600z"/>'
+            },
+            {
+                t: 'Baixar certidões',
+                i: '<path fill-rule="evenodd" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm-3 8h2v4h2.500L12 17.500 8.500 14H11z"/>'
+            },
+            {
+                t: 'Login sem senha',
+                i: '<path fill-rule="evenodd" d="M3 3h8v8H3zm2 2v4h4V5zm8-2h8v8h-8zm2 2v4h4V5zM3 13h8v8H3zm2 2v4h4v-4zm8-2h3v3h-3zm4 0h3v3h-3zm-4 4h3v3h-3zm4 1h3v2h-3z"/>'
+            },
+            {
+                t: 'Prova de vida',
+                i: '<path fill-rule="evenodd" d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm6 5a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5zm-4.500 9c0-1.800 3-2.500 4.500-2.500s4.500.700 4.500 2.500v.5h-9z"/>'
+            }
+        ];
+
+        var M = [
+            {
+                t: 'Dados pessoais',
+                i: '<path d="M17 3h-2.200a3 3 0 0 0-5.600 0H7a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-3 7h6v2H9zm0 4h6v2H9zm0 4h4v2H9z"/>'
+            },
+            {
+                t: 'Segurança da conta',
+                i: '<circle cx="9" cy="7" r="4"/><path d="M1 20c0-4 3.500-6 8-6s8 2 8 6z"/><path d="M19 12a2.500 2.500 0 0 0-2.500 2.500V16H16v5h6v-5h-.500v-1.500A2.500 2.500 0 0 0 19 12zm0 1.500c.600 0 1 .400 1 1V16h-2v-1.500c0-.600.400-1 1-1z"/>'
+            },
+            {
+                t: 'Privacidade',
+                i: '<path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm0 2a3 3 0 0 1 3 3v3H9V7a3 3 0 0 1 3-3z"/>'
+            }
+        ];
+
+        var L = document.getElementById('lista');
+
+        function norm(s) {
+            return s.toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function mk(list, L, f) {
+            L.innerHTML = '';
+
+            list.filter(function (s) {
+                return !f || norm(s.n || s.t).indexOf(norm(f)) > -1;
+            }).forEach(function (s) {
+                var b = document.createElement('button');
+
+                b.className = 'item';
+
+                b.innerHTML =
+                    '<svg class="ic" viewBox="0 0 24 24">' +
+                    s.i +
+                    '</svg>' +
+                    '<span class="t">' + s.t + '</span>' +
+                    (s.novo ? '<span class="novo">NOVO</span>' : '') +
+                    '<svg class="ch" viewBox="0 0 24 24">' +
+                    '<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>' +
+                    '</svg>';
+
+                b.onclick = function () {
+                    if (s.t === 'Carteira de documentos') {
+                        go('Carteira');
+                    } else {
+                        toast('Abrindo: ' + (s.n ? 'govinho' : s.t) + '…');
+                    }
+                };
+
+                L.appendChild(b);
+            });
+        }
+
+        function render(f) {
+            [['lista', S], ['lista2', M]].forEach(function (p) {
+                var e = document.getElementById(p[0]);
+
+                mk(p[1], e, f);
+
+                e.parentNode.style.display = e.children.length ? '' : 'none';
+            });
+        }
+
+        function filtra() {
+            render(document.getElementById('q').value);
+        }
+
+        var tt;
+
+        function toast(m) {
+            var e = document.getElementById('toast');
+
+            e.textContent = m;
+            e.classList.add('show');
+
+            clearTimeout(tt);
+
+            tt = setTimeout(function () {
+                e.classList.remove('show');
+            }, 1800);
+        }
+
+        var order = ['Início', 'Dados', 'QR Code', 'Carteira', 'Menu'];
+        var curV = 'Início';
+        var SC = {};
+        var stage = document.querySelector('.stage');
+
+        SC['Início'] = document.getElementById('home');
+        SC['Carteira'] = document.getElementById('wallet');
+
+        ['Dados', 'QR Code', 'Menu'].forEach(function (n) {
+            var m = document.createElement('main');
+
+            m.className = 'view';
+            m.textContent = n + ' — em construção';
+
+            stage.appendChild(m);
+
+            SC[n] = m;
+        });
+
+        function go(v) {
+            if (v === curV) return;
+
+            var from = SC[curV];
+            var to = SC[v];
+            var fwd = order.indexOf(v) > order.indexOf(curV);
+
+            document.querySelectorAll('#nav button').forEach(function (x) {
+                x.classList.toggle('on', x.dataset.v === v);
+            });
+
+            to.classList.add('nt');
+            to.classList.remove('cur', 'left');
+
+            if (!fwd) {
+                to.classList.add('left');
+            }
+
+            void to.offsetWidth;
+
+            to.classList.remove('nt', 'left');
+            to.classList.add('cur');
+
+            to.style.zIndex = fwd ? 2 : 1;
+            from.style.zIndex = fwd ? 1 : 2;
+
+            from.classList.remove('cur');
+
+            if (fwd) {
+                from.classList.add('left');
+            }
+
+            curV = v;
+
+            document.querySelector('.app').classList.toggle('w', v === 'Carteira');
+        }
+
+        document.getElementById('nav').addEventListener('click', function (e) {
+            var b = e.target.closest('button');
+
+            if (!b) return;
+
+            go(b.dataset.v);
+        });
+
+        render('');
+    </script>
+
+</body>
+</html>
